@@ -7,7 +7,7 @@
   "author": "王世安 <984292420@qq.com>",
   "license": "MIT",
   "scripts": {
-    "build": "webpack",
+    "build": "webpack -p",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
@@ -24,7 +24,9 @@
     "style-loader": "^1.3.0",
     "stylus": "^0.54.8",
     "stylus-loader": "^4.1.0",
-    "mini-css-extract-plugin": "^0.11.3"
-
+    "pug": "^3.0.0",
+    "pug-html-loader": "^1.1.5",
+    "raw-loader": "^4.0.1",
+    "html-webpack-plugin": "^4.5.0"
   }
 }

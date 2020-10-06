@@ -1,4 +1,5 @@
 const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
   mode: 'development',
@@ -19,11 +20,19 @@ module.exports = {
     }, {
       test: /\.css$/,
       loader: ['style-loader', 'css-loader']
+    }, {
+      test: /\.pug$/,
+      loader: ['raw-loader', 'pug-html-loader']
     }]
   },
   resolve: {
     extensions: [
       '.ts'
     ]
-  }
+  },
+  plugins: [
+    new HtmlWebpackPlugin({
+      template: "./index.pug"
+    })
+  ]
 };
