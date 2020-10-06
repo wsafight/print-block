@@ -1,0 +1,23 @@
+{
+  "name": "print-block",
+  "version": "0.0.1",
+  "description": "print demo test",
+  "main": "index.js",
+  "repository": "https://github.com/wsafight/print-block.git",
+  "author": "王世安 <984292420@qq.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "webpack",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "throttle-debounce": "^2.3.0",
+    "print-js": "^1.4.0"
+  },
+  "devDependencies": {
+    "webpack": "^4.44.2",
+    "webpack-cli": "^3.3.12",
+    "typescript": "^4.0.3",
+    "ts-loader": "^8.0.4"
+  }
+}
